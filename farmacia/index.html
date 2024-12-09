@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gestion Membresia Farmacia</title>
+    <!-- Escripts donde se creara todo -->
+    <script src="app.js" type="module" defer></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <!-- titulo para la pagina en general-->
+    <h1 class="text-3xl font-bold text-center mb-8">Gestionamiento de menbresias en la farmacia.</h1>
+    <!-- Se creara un formulario para Meter toda la informacion a ingresar por el cliente o nuevo miembro -->
+    <div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+
+        <h2 class="text-xl font-bold mb-4">Registro Cliente</h2>
+        <form  id="formRegistrar" class="space-y-4">
+            <div>
+                <label class="block font-bold" for="">Nombre</label>
+                <input type="text" id="nombre" class="w-full p-2 border rounded">
+            </div>
+
+            <div>
+                <label for=""  class="block font-bold">Fecha de Inscripcion</label>
+                <input type="date" id="fechaInscripcion"  class="w-full p-2 border rounded">
+            </div>
+            <div>
+                <label for="" class="w-full p-2 border rounded">Duracion (dias)</label>
+                <input type="number" id="duracion"  class="w-full p-2 border rounded">
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Registrar</button>
+        </form>
+    </div>
+
+    <!-- Resultados de el Registro -->
+    <div id="resultados"  class="mt-8 max-w-md mx-auto"></div>
+
+
+</body>
+
+
+</html>
